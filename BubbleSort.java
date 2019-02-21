@@ -1,6 +1,6 @@
-import java.util.Scanner;
+import java.util.Scanner; 
 
-class DemonstrateArray {
+class DemonstrateArray { // Выводит массив
       void demonstrateArr(int array[]) {
         System.out.print("Массив: ");
         for (int i = 0; i < array.length; i++) {
@@ -10,7 +10,7 @@ class DemonstrateArray {
     }
 }
 
-class SortingB {
+class SortingB { // Сортирует массив
     void sortArray(int array[]) {
 
 
@@ -26,7 +26,7 @@ class SortingB {
     }
 }
 
-class BubbleSort {
+class BubbleSort { // мейн-класс
     public static void main(String args[]) {
         Scanner input = new Scanner(System.in);
         System.out.print("Введите длину массива: ");
@@ -43,7 +43,7 @@ class BubbleSort {
         System.out.println();
         System.out.println("Отсортировать массив?(1 - yes, another key - quit)");
         int choice = input.nextInt();
-        if(choice == 1) {
+        if(choice == 1) { // массив будет отсортирован, если вводишь единицу, в случае нажатия другой клавиши - quit
             SortingB returnSort = new SortingB();
             returnSort.sortArray(array);
             System.out.print("Отсортированный ");
