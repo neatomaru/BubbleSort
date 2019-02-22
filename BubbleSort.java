@@ -1,10 +1,10 @@
 import java.util.Scanner; 
 
-class DemonstrateArray { // Выводит массив
+class DemonstrateArray {
       void demonstrateArr(int array[]) {
         System.out.print("Массив: ");
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(" " + array[i]);
+        for (int x : array) {
+            System.out.print(" " + x);
         }
         System.out.println();
     }
